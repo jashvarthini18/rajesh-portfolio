@@ -1,0 +1,255 @@
+.passion-section {
+  background: var(--bg);
+  color: var(--text);
+  padding: 100px 0;
+}
+
+.passion-label {
+  letter-spacing: 6px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.passion-heading {
+  font-size: 64px;
+  line-height: 1.15;
+  max-width: 900px;
+  margin-bottom: 70px;
+  color: var(--text);
+}
+
+.passion-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.passion-content p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.passion-content blockquote {
+  margin-top: 2.5rem;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 32px;
+  line-height: 1.4;
+
+  color: var(--text);
+
+  border-left: 4px solid #3b82f6;
+
+  padding-left: 1.5rem;
+}
+
+.purpose-points {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.purpose-item {
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  color: var(--text);
+
+  transition: all 0.3s ease;
+}
+
+.purpose-item:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.purpose-item span {
+  display: block;
+
+  margin-top: 10px;
+
+  color: var(--text-secondary);
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ==========================
+   Laptop/Desktop (1024px)
+   ========================== */
+
+@media (max-width: 1200px) {
+
+  .passion-heading {
+    font-size: 56px;
+  }
+
+  .passion-content p {
+    font-size: 16px;
+  }
+
+  .purpose-item {
+    font-size: 22px;
+  }
+
+}
+
+/* ==========================
+   Tablet (768px)
+   ========================== */
+
+@media (max-width: 1100px) {
+
+  .passion-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .passion-section {
+    padding: 90px 0;
+  }
+
+  .passion-heading {
+    font-size: 44px;
+  }
+
+  .passion-content p {
+    font-size: 16px;
+  }
+
+  .passion-content blockquote {
+    font-size: 28px;
+  }
+
+  .purpose-item {
+    font-size: 20px;
+  }
+
+  .purpose-item span {
+    font-size: 14px;
+  }
+
+}
+
+/* ==========================
+   Large Mobile (425px)
+   ========================== */
+
+@media (max-width: 425px) {
+
+  .passion-section {
+    padding: 80px 0;
+  }
+
+  .passion-label {
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+
+  .passion-heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .passion-content p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .passion-content blockquote {
+    font-size: 24px;
+    padding-left: 1rem;
+  }
+
+  .purpose-item {
+    padding: 1.5rem;
+    font-size: 18px;
+  }
+
+  .purpose-item span {
+    font-size: 13px;
+  }
+
+}
+
+/* ==========================
+   Mobile (375px)
+   ========================== */
+
+@media (max-width: 375px) {
+
+  .passion-heading {
+    font-size: 34px;
+  }
+
+  .passion-content p {
+    font-size: 14px;
+  }
+
+  .passion-content blockquote {
+    font-size: 22px;
+  }
+
+  .purpose-item {
+    font-size: 16px;
+  }
+
+  .purpose-item span {
+    font-size: 12px;
+  }
+
+}
+
+/* ==========================
+   Small Mobile (320px)
+   ========================== */
+
+@media (max-width: 320px) {
+
+  .passion-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+  .passion-heading {
+    font-size: 30px;
+  }
+
+  .passion-content p {
+    font-size: 14px;
+  }
+
+  .passion-content blockquote {
+    font-size: 20px;
+  }
+
+  .purpose-item {
+    padding: 1.25rem;
+    font-size: 15px;
+  }
+
+  .purpose-item span {
+    font-size: 12px;
+  }
+
+}

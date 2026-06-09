@@ -1,0 +1,275 @@
+.journey-section {
+  background: var(--bg);
+  color: var(--text);
+  padding: 100px 0;
+}
+
+.journey-label {
+  letter-spacing: 6px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.journey-heading {
+  font-size: 64px;
+  line-height: 1.15;
+  margin-bottom: 80px;
+  max-width: 900px;
+  color: var(--text);
+}
+
+.journey-timeline {
+  position: relative;
+}
+
+.journey-timeline::before {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  transform: translateX(-50%);
+
+  width: 1px;
+  height: 100%;
+  
+
+  background: var(--border);
+}
+
+.journey-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.journey-item.left {
+  flex-direction: row;
+}
+
+.journey-item.right {
+  flex-direction: row-reverse;
+}
+
+.journey-content {
+  width: 45%;
+}
+
+.timeline-center {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+.journey-year {
+  display: block;
+
+  color: var(--text-secondary);
+
+  letter-spacing: 2px;
+
+  font-size: 14px;
+
+  margin-bottom: 15px;
+}
+
+.journey-content h3 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text-secondary);
+
+  margin-bottom: 20px;
+
+  font-size: 18px;
+}
+
+.description {
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+
+  font-size: 18px;
+}
+
+/* ==========================
+   Laptop/Desktop (1024px)
+   ========================== */
+
+@media (max-width: 1200px) {
+
+  .journey-heading {
+    font-size: 56px;
+  }
+
+  .journey-content h3 {
+    font-size: 28px;
+  }
+
+  .company {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+}
+
+/* ==========================
+   Tablet (768px)
+   ========================== */
+
+@media (max-width: 900px) {
+
+  .journey-item,
+  .journey-item.left,
+  .journey-item.right {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .timeline-center {
+    order: 1;
+
+    width: 30px;
+    min-width: 30px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .journey-content {
+    order: 2;
+
+    width: calc(100% - 30px);
+
+    padding-left: 0;
+  }
+
+  .journey-timeline::before {
+    left: 15px;
+    transform: none;
+    width: 0.5px;
+  }
+}
+
+/* ==========================
+   Large Mobile (425px)
+   ========================== */
+
+@media (max-width: 425px) {
+
+  .journey-section {
+    padding: 80px 0;
+  }
+
+  .journey-label {
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+
+  .journey-heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .journey-item {
+    gap: 1rem !important;
+    margin-bottom: 50px;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .journey-content h3 {
+    font-size: 20px;
+  }
+
+  .company {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+}
+
+/* ==========================
+   Mobile (375px)
+   ========================== */
+
+@media (max-width: 375px) {
+
+  .journey-heading {
+    font-size: 34px;
+  }
+
+  .journey-content h3 {
+    font-size: 18px;
+  }
+
+  .company {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+}
+
+/* ==========================
+   Small Mobile (320px)
+   ========================== */
+
+@media (max-width: 320px) {
+
+  .journey-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+  .journey-heading {
+    font-size: 30px;
+  }
+
+  .journey-content h3 {
+    font-size: 16px;
+  }
+
+  .company {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+}

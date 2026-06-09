@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "./navbar.css";
+@import "./hero.css";
+@import "./about.css";
+@import "./timeline.css";
+@import "./skills.css";
+@import "./education.css";
+@import "./passion.css";
+@import "./contact.css";
+@import "./footer.css";
+@import "./scrolltop.css";
+
+:root {
+  --navy: #0f172a;
+  --navy-light: #1e293b;
+  --silver: #cbd5e1;
+  --white: #ffffff;
+  --accent: #64748b;
+
+  --bg: #ffffff;
+  --surface: #f8fafc;
+
+  --text: #0f172a;
+  --text-secondary: #475569;
+
+  --card: #f8fafc;
+  --card-bg: rgba(15, 23, 42, 0.04);
+  --border: rgba(15, 23, 42, 0.08);
+}
+
+body.dark {
+  --bg: #020817;
+  --surface: rgba(255,255,255,0.05);
+
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --card: #0f172a;
+  --card-bg: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.08);
+}
+
+body.dark .scroll-top:hover {
+  box-shadow:
+    0 0 20px rgba(59,130,246,0.3),
+    0 10px 25px rgba(0,0,0,0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+a {
+  text-decoration: none;
+}
